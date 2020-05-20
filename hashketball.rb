@@ -248,7 +248,25 @@ game_hash
 big_shoe_baller
 end  
 
+def rebounds (player_name)
+game_hash
+  game_hash.each do |team, team_info|
+    team_info.each do |team_level, info|
+      if info.class == Array
+        if info[0].class == Hash
+          info.each do |player, stats|
+            if player[:player_name] == player_name
+              return player[:rebounds]
+            end
+          end
+        end
+      end
+    end
+  end 
+end
+
 def big_shoe_rebounds
   big_shoe_baller
+  rebounds (big_shoe_baller)
   binding.pry
 end
