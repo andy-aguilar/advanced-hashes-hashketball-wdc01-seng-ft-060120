@@ -210,7 +210,27 @@ game_hash
   end 
 end
 
+#def find_big_shoe
+#  big_shoe = 0 
+#  big_shoe_baller = ""
+#  game_hash
+#  game_hash.each do |team, team_info|
+#    team_info.each do |team_level, info|
+#      if info.class == Array
+#        if info[0].class == Hash
+#          info.each do |player, stats|
+#            binding.pry
+#          end
+#        end
+#      end
+#    end
+#  end 
+#end
+
+
 def big_shoe_rebounds
+big_shoe = 0
+big_shoe_baller = ""
 game_hash
   game_hash.each do |team, team_info|
     team_info.each do |team_level, info|
