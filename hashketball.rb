@@ -132,7 +132,7 @@ def num_points_scored (player_name)
   game_hash
   game_hash.each do |team, team_info|
     team_info.each do |team_level, info|
-      info.each do |player_level, attribute|
+      if info.class == array 
       binding.pry
       end
     end
