@@ -268,5 +268,4 @@ end
 def big_shoe_rebounds
   big_shoe_baller
   rebounds (big_shoe_baller)
-  binding.pry
 end
