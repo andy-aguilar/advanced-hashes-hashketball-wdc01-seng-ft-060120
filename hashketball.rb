@@ -179,3 +179,11 @@ def team_names
   end
   team_names_array
 end
+
+def player_numbers
+  player_numbers_array = []
+  game_hash
+  game_hash.each do |team, team_info|
+    binding.pry
+  end
+end
