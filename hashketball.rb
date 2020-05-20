@@ -152,9 +152,7 @@ def shoe_size (player_name)
       if info.class == Array
         if info[0].class == Hash
           info.each do |player, stats|
-            if player[:player_name] == player_name
-              return player[:shoe_size]
-            end
+            binding.pry
           end
         end
       end
