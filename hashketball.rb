@@ -192,3 +192,20 @@ def player_numbers (team_name)
   end
   player_numbers_array
 end
+
+def player_stats (player_name)
+game_hash
+  game_hash.each do |team, team_info|
+    team_info.each do |team_level, info|
+      if info.class == Array
+        if info[0].class == Hash
+          info.each do |player, stats|
+            if player[:player_name] == player_name
+              return player
+            end
+          end
+        end
+      end
+    end
+  end 
+end
