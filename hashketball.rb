@@ -190,4 +190,5 @@ def player_numbers (team_name)
       end
     end
   end
+  players_numbers_array
 end
