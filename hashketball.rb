@@ -187,7 +187,7 @@ def player_numbers (team_name)
     if team_info[:team_name] = team_name
       team_info[:players].each do |player_hash|
         binding.pry
-        players_numbers_array << player_hash.values_at (:number)
+        players_numbers_array << player_hash.values_at(:number)
       end
     end
   end
