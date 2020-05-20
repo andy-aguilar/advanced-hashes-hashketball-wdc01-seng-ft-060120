@@ -135,7 +135,7 @@ def num_points_scored (player_name)
       if info.class == Array
         if info[0].class == Hash
           info.each do |player, stats|
-            if player[:player_name] = player_name
+            if player[:player_name] == player_name
               return player[:points]
             end
           end
