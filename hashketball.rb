@@ -237,8 +237,8 @@ game_hash
       if info.class == Array
         if info[0].class == Hash
           info.each do |player, stats|
-            if player[shoe] > big_shoe 
-              big_shoe = player[shoe]
+            if player[:shoe] > big_shoe 
+              big_shoe = player[:shoe]
               big_shoe_baller = player[:player_name]
               binding.pry
             end
