@@ -134,6 +134,7 @@ def num_points_scored (player_name)
     team_info.each do |team_level, info|
       if info.class == Array
         binding.pry
+        if info[0]
       end
     end
   end 
