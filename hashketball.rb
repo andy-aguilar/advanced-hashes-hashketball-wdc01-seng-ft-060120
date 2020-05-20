@@ -229,6 +229,7 @@ end
 
 
 def big_shoe_rebounds
+  def big_shoe_baller
 big_shoe = 0
 big_shoe_baller = ""
 game_hash
