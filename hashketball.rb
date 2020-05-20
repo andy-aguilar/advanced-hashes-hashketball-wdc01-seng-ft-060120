@@ -227,10 +227,8 @@ end
 #  end 
 #end
 
-
-def big_shoe_rebounds
-  def big_shoe_baller
-    big_shoe = 0
+def big_shoe_baller
+big_shoe = 0
 big_shoe_baller = ""
 game_hash
   game_hash.each do |team, team_info|
@@ -241,11 +239,16 @@ game_hash
             if player[:shoe] > big_shoe 
               big_shoe = player[:shoe]
               big_shoe_baller = player[:player_name]
-              binding.pry
             end
           end
         end
       end
     end
   end 
+big_shoe_baller
+end  
+
+def big_shoe_rebounds
+  big_shoe_baller
+  binding.pry
 end
