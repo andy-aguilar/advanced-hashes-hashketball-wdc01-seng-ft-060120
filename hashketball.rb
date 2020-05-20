@@ -170,3 +170,11 @@ def team_colors (team_name)
     end
   end
 end
+
+def team_names
+  team_names_array = []
+  game_hash
+  game_hash.each do |team, team_info|
+    binding.pry
+  end
+end
