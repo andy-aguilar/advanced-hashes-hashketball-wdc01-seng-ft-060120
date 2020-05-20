@@ -185,7 +185,7 @@ def player_numbers (team_name)
   game_hash
   game_hash.each do |team, team_info|
     binding.pry
-    if team_info[:team_name] = team_name
+    if team_info[:team_name] == team_name
       team_info[:players].each do |player_hash|
         player_numbers_array << player_hash[:number]
       end
